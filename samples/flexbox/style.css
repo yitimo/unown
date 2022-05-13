@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  margin: 0;
+}
+
+.row {}
+.row.flex {
+  display: flex;
+}
+.row.flex > * {
+  flex-shrink: 0;
+}
+.row.box {
+  display: box;
+  display: -webkit-box;
+}
+
+.col {
+  padding: 15px;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+.col.block {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.row:nth-of-type(5n) .col:nth-child(3n) {
+  background-color: lightyellow;
+}
+.row:nth-of-type(5n) .col:nth-child(3n+1) {
+  background-color: lightblue;
+}
+.row:nth-of-type(5n) .col:nth-child(3n+2) {
+  background-color: lightcoral;
+}
+
+
+.row:nth-of-type(5n+1) .col:nth-child(3n) {
+  background-color: lightcyan;
+}
+.row:nth-of-type(5n+1) .col:nth-child(3n+1) {
+  background-color: lightgreen;
+}
+.row:nth-of-type(5n+1) .col:nth-child(3n+2) {
+  background-color: lightgray;
+}
+
+
+.row:nth-of-type(5n+2) .col:nth-child(3n) {
+  background-color: lightpink;
+}
+.row:nth-of-type(5n+2) .col:nth-child(3n+1) {
+  background-color: lightsalmon;
+}
+.row:nth-of-type(5n+2) .col:nth-child(3n+2) {
+  background-color: lightseagreen;
+}
+
+
+.row:nth-of-type(5n+3) .col:nth-child(3n) {
+  background-color: lightskyblue;
+}
+.row:nth-of-type(5n+3) .col:nth-child(3n+1) {
+  background-color: lightslategray;
+}
+.row:nth-of-type(5n+3) .col:nth-child(3n+2) {
+  background-color: lightsteelblue;
+}
+
+
+.row:nth-of-type(5n+4) .col:nth-child(3n) {
+  background-color: wheat;
+}
+.row:nth-of-type(5n+4) .col:nth-child(3n+1) {
+  background-color: paleturquoise;
+}
+.row:nth-of-type(5n+4) .col:nth-child(3n+2) {
+  background-color: papayawhip;
+}
