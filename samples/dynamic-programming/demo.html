@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h3 {
+      margin: 20px 0 0 0;
+    }
+    p {
+      margin: 12px 0 0 0;
+    }
+    .good-item {
+      display: inline-block;
+      width: 25%;
+      white-space: nowrap;
+      word-break: break-all;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <form id="form-config" name="config" action="javascript:void(0)" onsubmit="handleSubmit()">
+    <p>
+      <label for="number">随机生成商品数量:</label>
+      <input type="number" name="number" value="10" id="form-number" />
+      个
+    </p>
+    <p>
+      <label for="weight">限重:</label>
+      <input type="number" name="weight" value="10" id="form-weight" />
+      kg
+    </p>
+    <button type="submit">go</button>
+  </form>
+  <div id="result"></div>
+  <script src="./script.js"></script>
+  <script>
+    function handleSubmit() {
+      const formData = new FormData(document.querySelector('#form-config'))
+      const result = main(+formData.get('number'), +formData.get('weight'))
+      document.querySelector('#result').innerHTML = result
+    }
+  </script>
+</body>
+</html>
