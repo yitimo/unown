@@ -44,6 +44,6 @@ const resD = pick(data, 'd')
 
 console.log(`res: ${resA}, ${resB}, ${resC}, ${resD}`)
 
-function pick<ParentT, KeyT extends keyof ParentT>(src: ParentT, key: KeyT) {
+function pick<ParentT2, KeyT2 extends keyof ParentT2>(src: ParentT2, key: KeyT2) {
   return src[key]
 }

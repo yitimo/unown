@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "declaration": true,
+    "sourceMap": true,
+    "module": "CommonJS"
+  },
+  "include": [
+    "."
+  ]
+}
