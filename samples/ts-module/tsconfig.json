@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+      "target": "ESNext",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "lib": ["DOM", "ESNext"],
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "declaration": false,
+      "strict": true,
+      "useUnknownInCatchVariables": false,
+      "jsx": "react"
+  }
+}
