@@ -1,8 +1,10 @@
-import { createRoot } from 'react-dom/client'
+import { createApp } from 'vue'
 import React from 'react'
-// import { createApp } from 'vue'
 
-import App from './App'
+function Child() {
+  return <div>Hello</div>
+}
 
-createRoot(document.getElementById('')!).render(<App />)
-// createApp(CompA).mount(new HTMLDivElement())
+export function App() {
+  return <Child />
+}
