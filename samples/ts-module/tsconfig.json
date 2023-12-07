@@ -5,6 +5,10 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "target": "ESNext",
-    "removeComments": true
+    "removeComments": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "../ts-module-types"
+    ]
   }
 }
