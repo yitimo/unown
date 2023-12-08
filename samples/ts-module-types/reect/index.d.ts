@@ -1,22 +1,6 @@
-// import './jsx-extend'
-
-// export {}
-
-// declare global {
-
-// }
-
 declare namespace Reect {
-  interface Pong { value: 'pong' }
-  function ping(): Pong
-  function createElement(type: 'div'): never;
+  function createRoot(node: Node): { render(ele: JSX.Element): void };
 }
+
 // export = Reect;
 // export as namespace Reect;
-
-// export {}
-// declare const a: string
-
-// export { a }
-
-

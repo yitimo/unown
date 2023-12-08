@@ -6,9 +6,10 @@
  * - 试试更换引入顺序
  * - 改用 react-jsx
  * - 看看 tsc 编译结果
+ * - 为什么 react-jsx 不用手动引入 React 了
  */
 // import { createApp } from 'vue'
-// import React from 'react'
+import React from 'react'
 // import 'vue/jsx'
 
 function Child() {
